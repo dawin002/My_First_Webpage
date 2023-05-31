@@ -28,7 +28,7 @@ body {
     margin-top:30px;
 }
 
-#menu a {
+#menu a, #go_home .fake {
     color: skyblue;
     font-size: 25px;
     text-decoration: underline;
@@ -46,6 +46,17 @@ body {
     align-self: flex-end;
 }
 
+#go_home a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#title a {
+    color: white;
+    text-decoration: none;
+    cursor:default;
+}
+
 #btn1 {
     display: block;
 }
@@ -57,8 +68,20 @@ body {
 
 .btns {
     margin-top: 200px;
-
     display: none;
+}
+
+#realGoHome, #rrealGoHome {
+    display: none;
+    font-size: 35px;
+    color: skyblue;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+#ifclick {
+    display: none;
+    color: skyblue;
 }
 
 #i {

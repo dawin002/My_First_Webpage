@@ -40,3 +40,39 @@ let btns = {
         }, 500)
     }
 }
+
+let goHome = {
+    'count': 5,
+    'onclickHandler': function(self) {
+        alert('HAHA~~~ It`s Fake~~~~~');
+        self.style.visibility='hidden';
+        this.count -= 1;
+        
+        if (this.count == 0) {
+            setTimeout(function(){
+                document.querySelector('#realGoHome').style.display='block';
+            }, 1000)
+            
+        }
+    }
+}
+
+let rGoHome = {
+    'run': function (self) {
+        self.style.display='none';
+        alert('HAHAHAHAHA~~~ It`s Fake~~~Too~~');
+        setTimeout(function(){
+            document.querySelector('#rrealGoHome').style.display='block';
+        }, 1000)
+    }
+}
+
+let rrGoHome = {
+    'onMouseHandler': function (self) {
+        self.style.visibility='hidden';
+        setTimeout(function(){
+            self.style.visibility='visible';
+            document.querySelector('#ifclick').style.display='block';
+        }, 1000)
+    }
+}

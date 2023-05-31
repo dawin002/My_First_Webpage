@@ -7,7 +7,7 @@
         <script src="mad.js"></script>
     </head>
     <body>
-        <h1 id="title">Are You Mad?</h1>
+        <h1 id="title"><a href="index.html">Are You Mad?</a></h1>
         
         <div id="mad_game">
             <input type="button" id="btn1" value="click me!" onclick="
@@ -22,7 +22,14 @@
             <input type="button" class="btns" value="ㅋ" onmouseenter="btns.onMouseEntereHandler(this)">
         </div>
         <div id="go_home">
-
+            <a id='rrealGoHome' href="index.html" onmouseenter="rrGoHome.onMouseHandler(this)">This is the Real Go Home Button.</a>
+            <p id="ifclick">(If you can click it)</p>
+            <a id='realGoHome' onclick="rGoHome.run(this)">Real Go Home</a>
+            <a class='fake' onclick="goHome.onclickHandler(this)">Go Home</a>
+            <a class='fake' onclick="goHome.onclickHandler(this)">Go Home</a>
+            <a class='fake' onclick="goHome.onclickHandler(this)">Go Home</a>
+            <a class='fake' onclick="goHome.onclickHandler(this)">Go Home</a>
+            <a class='fake' onclick="goHome.onclickHandler(this)">Go Home</a>
         </div>
     </body>
 </html>
